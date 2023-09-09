@@ -21,8 +21,8 @@ app.get('/api', (req, res) => {
     "current_day": currentDayOfWeek,
     "utc_time": formattedDate,
     track,
-    "github_file_url": "url",
-    "github_repo_url": "url",
+    "github_file_url": "https://github.com/Akinolaaa/hng-task-1/blob/main/server.js",
+    "github_repo_url": "https://github.com/Akinolaaa/hng-task-1.git",
     "status_code": 200,
   })
 })
