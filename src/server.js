@@ -1,6 +1,10 @@
 const express = require('express');
 require('dotenv').config();
 const app = express();
+const connectDB = require('./db/connect')
+const personsRouter = require('./persons/persons.route');
+
+app.use(express.json());
 
 app.get('/api', (req, res) => {
   const { slack_name, track } = req.query;
@@ -27,8 +31,15 @@ app.get('/api', (req, res) => {
   })
 })
 
+app.use('/api/persons', personsRouter);
+
 const PORT = 4000 || process.env.PORT
 
-app.listen(PORT, ()=> {
-  console.log(`listening on port ${PORT} `)
-})
+const startServer = async() => {
+  await connectDB(process.env.DB_URI)
+  app.listen(PORT, ()=> {
+    console.log(`listening on port ${PORT} `)
+  })
+}
+
+startServer()
