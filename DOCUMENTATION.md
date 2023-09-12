@@ -2,6 +2,8 @@
   Test instructions available in README.md
   * local domain- `http://localhost:4000`
   * deployment domain- `https://hngstage1-api-akinolaaa.onrender.com`
+  * [E-R Diagram](https://lucid.app/lucidchart/ef9fab6a-8ecc-4fdc-a28f-1ed5bddc3761/edit?beaconFlowId=9833F4A8DFB52315&page=0_0&invitationId=inv_fa566bc0-d7b4-4b98-bdd7-4778b7705fc4#)
+  * [UML Diagram](https://lucid.app/lucidchart/1e6d4abb-35f3-449a-b77e-5d2a1dcaf275/edit?viewport_loc=-2324%2C-736%2C4220%2C2216%2C0_0&invitationId=inv_f013221e-faaa-475c-9e3c-a3cbbb11bfc0)
 
 ## Assumptions && Limitations
 * The `name` property in the person resource is not unique.
@@ -122,19 +124,19 @@
 On your terminal, type the following commands;
 1. Clone the repository:
 
-```bash
-git clone https://github.com/Akinolaaa/hng-task-1.git
-cd hng-task-1
-```
+  ```bash
+  git clone https://github.com/Akinolaaa/hng-task-1.git
+  cd hng-task-1
+  ```
 
 2. Install dependencies:
 
-```bash
-npm install
-```
+  ```bash
+  npm install
+  ```
 
 3. Start the server:
-```bash
-npm start
-```
+  ```bash
+  npm start
+  ```
 
