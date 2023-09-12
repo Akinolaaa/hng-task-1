@@ -10,7 +10,7 @@ Before you start, make sure you have the following installed:
 - [npm](https://www.npmjs.com/)
 
 ## Getting Started
-
+On your terminal, type the following commands;
 1. Clone the repository:
 
 ```bash
@@ -28,3 +28,16 @@ npm install
 ```bash
 npm start
 ```
+
+## Testing the API
+1. Create `.env` file in the root folder i.e. file name should be .env
+2. Copy and paste the following into the .env file created
+   ```bash
+   DB_URI=mongodb+srv://nodexexpress:bhQk6XJ5BehGDwYI@nodeexpressprojects.1we4a.mongodb.net/HNG-STAGE-2?retryWrites=true&w=majority
+   ```
+3. Run the command the following command in your terminal to begin testing.
+   ```bash
+   npm run test
+   ```
+### Note: During testing, person created with the create endpoint is deleted with the delete endpoint
+The postman collection is the file named `hng.postman_collection.json`
